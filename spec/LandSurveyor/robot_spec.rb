@@ -25,14 +25,44 @@ describe "Robot" do
 
 	describe "Rotate Functions" do
 
-		it "rotate left" do
+		it "rotate left when north" do
 			robot1.turn_left
 			expect(robot1.check_orientation).to eq('WEST')
 		end
 
-		it "rotate right" do
+		it "rotate left when west" do
+			robot2.turn_left
+			expect(robot2.check_orientation).to eq('SOUTH')
+		end
+
+		it "rotate left when south" do
+			robot4.turn_left
+			expect(robot4.check_orientation).to eq('EAST')
+		end
+
+		it "rotate left when east" do
+			robot3.turn_left
+			expect(robot3.check_orientation).to eq('NORTH')
+		end
+
+		it "rotate right when north" do
 			robot1.turn_right
 			expect(robot1.check_orientation).to eq('EAST')
+		end
+
+		it "rotate right when east" do
+			robot3.turn_right
+			expect(robot3.check_orientation).to eq('SOUTH')
+		end
+
+		it "rotate right when south" do
+			robot4.turn_right
+			expect(robot4.check_orientation).to eq('WEST')
+		end
+
+		it "rotate right when west" do
+			robot2.turn_right
+			expect(robot2.check_orientation).to eq('NORTH')
 		end
 
 	end
@@ -66,7 +96,7 @@ describe "Robot" do
 		it "display x, y and orientation in a single line" do
 			expect(robot2.to_s).to eq("2 2 WEST")
 		end
-		
+
 	end
 
 end
