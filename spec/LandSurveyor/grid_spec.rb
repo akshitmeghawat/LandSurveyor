@@ -7,9 +7,9 @@ describe "Grid" do
 	describe "checking grid type" do
 
 		it "check class type" do
-			expect(grid1.class).to eq(Grid.class)
+			expect(grid1.class).to eq(Grid)
 		end
-		
+
 	end
 	
 end

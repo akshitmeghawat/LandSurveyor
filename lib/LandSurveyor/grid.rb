@@ -1,4 +1,4 @@
-#maintains a grid
+#intializes and maintains a grid
 
 class Grid
 
