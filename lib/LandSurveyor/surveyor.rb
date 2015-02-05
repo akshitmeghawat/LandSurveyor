@@ -3,6 +3,7 @@
 class Surveyor
 
 	def initialize
+		@grid2 = Grid.new(5, 5)
 	end
 
 	def start
@@ -47,7 +48,7 @@ class Surveyor
 
 	def start_test
 		input = Kernel.gets.chomp
-		robot1.new(input)
+		@grid2.new(input)
 	end
 
 end
