@@ -61,4 +61,12 @@ describe "Robot" do
 
 	end
 
+	describe "Checking representations" do
+
+		it "display x, y and orientation in a single line" do
+			expect(robot2.to_s).to eq("2 2 WEST")
+		end
+		
+	end
+
 end

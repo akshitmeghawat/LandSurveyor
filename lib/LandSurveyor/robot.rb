@@ -59,4 +59,8 @@ class Robot
 		end
 	end
 
+	def to_s
+		"#{@x} #{@y} #{@orientation}"
+	end
+
 end
