@@ -4,10 +4,10 @@ describe "Surveyor"  do
 
 	it "tests the launch" do
 
-		robot_1 = Robot.new(0, 0, 'NORTH')
-  	allow(Robot).to receive(:new) { robot_1 }
-  	allow(Kernel).to receive(:gets) { "" }
-  	expect(robot_1).to receive(:intialize).with(0, 0, 'NORTH')
+		grid1 = Grid.new(6, 6)
+  	allow(Grid).to receive(:new) { grid1 }
+  	allow(Kernel).to receive(:gets) { "6, 6" }
+  	expect(grid1).to receive(:new).with("6, 6")
 
   	surveyor1 = Surveyor.new
   	surveyor1.start_test

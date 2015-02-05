@@ -14,7 +14,7 @@
       <img src="./assets/0.8.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-02-05T12:19:09+05:30">2015-02-05T12:19:09+05:30</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-02-05T12:27:26+05:30">2015-02-05T12:27:26+05:30</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,7 +25,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.3
+         1.28
        </span>
     </span> hits/line)
   </h2>
@@ -77,7 +77,7 @@
         <td>31</td>
         <td>25</td>
         <td>6</td>
-        <td>2.2</td>
+        <td>2.1</td>
       </tr>
       
       <tr>
@@ -107,7 +107,7 @@
         <td>9</td>
         <td>9</td>
         <td>0</td>
-        <td>1.1</td>
+        <td>1.2</td>
       </tr>
       
     </tbody>
@@ -284,20 +284,20 @@
           <code class="ruby">	def initialize(x, y, orientation)</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="6">
-          <span class="hits">12</span>
+        <li class="covered" data-hits="11" data-linenumber="6">
+          <span class="hits">11</span>
           
           <code class="ruby">		@x = x</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="7">
-          <span class="hits">12</span>
+        <li class="covered" data-hits="11" data-linenumber="7">
+          <span class="hits">11</span>
           
           <code class="ruby">		@y = y</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="8">
-          <span class="hits">12</span>
+        <li class="covered" data-hits="11" data-linenumber="8">
+          <span class="hits">11</span>
           
           <code class="ruby">		@orientation = orientation</code>
         </li>
@@ -1499,25 +1499,25 @@
         <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
-          <code class="ruby">		robot_1 = Robot.new(0, 0, &#39;NORTH&#39;)</code>
+          <code class="ruby">		grid1 = Grid.new(6, 6)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="8">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="8">
+          <span class="hits">2</span>
           
-          <code class="ruby">  	allow(Robot).to receive(:new) { robot_1 }</code>
+          <code class="ruby">  	allow(Grid).to receive(:new) { grid1 }</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="9">
           <span class="hits">2</span>
           
-          <code class="ruby">  	allow(Kernel).to receive(:gets) { &quot;&quot; }</code>
+          <code class="ruby">  	allow(Kernel).to receive(:gets) { &quot;6, 6&quot; }</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="10">
           <span class="hits">1</span>
           
-          <code class="ruby">  	expect(robot_1).to receive(:intialize).with(0, 0, &#39;NORTH&#39;)</code>
+          <code class="ruby">  	expect(grid1).to receive(:new).with(&quot;6, 6&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
