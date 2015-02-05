@@ -9,6 +9,7 @@ class Surveyor
 	def start
 
 		robot_output = []
+		puts "enter exit to leave"
 		grid_input = gets.chomp
 		grid_upper_right = grid_input.split(" ")
 		grid1 = Grid.new(grid_upper_right[0].to_i, grid_upper_right[1].to_i)
